@@ -1,0 +1,14 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+ /* header */
+ .navbar .navbar-brand h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #DE5879;
+ }
