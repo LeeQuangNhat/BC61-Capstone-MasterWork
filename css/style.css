@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
 }
  /* header */
  .navbar .navbar-brand h1{
@@ -12,3 +13,31 @@
     letter-spacing: -1px;
     color: #DE5879;
  }
+ .navbar .navbar-nav .nav-item a{
+    font-size: 14px;
+    transition: all 0.5s;
+ }
+ .navbar .navbar-nav .nav-item .dropdown_icon i{
+    font-size: 10px;
+    position: absolute;
+    right: 5px;
+    top: 30px;
+ }
+ .navbar a.nav-link::before, .navbar a.dropdown-item::before {
+    position: absolute;
+    content: '';
+    background: #DE5879;
+    width: 0px;
+    height: 2px;
+    bottom: 0px;
+    transition: all 0.5s;
+}
+.navbar .nav-item a.nav-link::before{
+    bottom: 20px;
+}
+.navbar a.nav-link:hover::before, .navbar a.dropdown-item:hover::before {
+    width: 20px;
+}
+.navbar a.nav-link:hover, .navbar a.dropdown-item:hover{
+    color: #DE5879;
+}
