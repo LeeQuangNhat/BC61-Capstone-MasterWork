@@ -21,7 +21,7 @@
     font-size: 10px;
     position: absolute;
     right: 5px;
-    top: 30px;
+    top: 32px;
  }
  .navbar a.nav-link::before, .navbar a.dropdown-item::before {
     position: absolute;
