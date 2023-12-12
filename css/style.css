@@ -41,3 +41,32 @@
 .navbar a.nav-link:hover, .navbar a.dropdown-item:hover{
     color: #DE5879;
 }
+.navbar .search i{
+    color: #5a5a5a;
+    font-size: 15px;
+    opacity: 0.7;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    background: #F7F9FC;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #eee;
+    transition: all 0.5s;
+}
+.navbar .search i:hover{
+    color: #2C3038;
+    opacity: 1;
+}
+.btn-outline-primary {
+    color: #dc4f72;
+    border-color: #dc4f72;
+}
+.btn {
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+}
