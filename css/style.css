@@ -224,11 +224,12 @@ header{
     line-height: 40px;
     color: #2C3038;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 .business_text p {
     color: #5a5a5a;
     line-height: 25px;
+    font-size: 18px;
 }
 .business_btn .btn-outline-primary {
     color: #fff;
@@ -239,7 +240,6 @@ header{
     line-height: 52px;
     font-weight: 700;
     font-size: 14px;
-    margin: 0px;
     padding: 0px 30px;
 }
 .business_img img{
@@ -247,4 +247,75 @@ header{
 }
 .business_img img:hover {
     transform: translateY(-10px);
+}
+.business_border {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 6px;
+    transition: all 0.5s;
+    border: 1px solid #f8f9fa;
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+}
+.business_number_item h6 {
+    font-size: 16px;
+    line-height: 25px;
+    color: #2C3038;
+    font-weight: 700;
+}
+.business_number_item p.counter {
+    font-size: 50px;
+    line-height: 1;
+    color: #dc4f72;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.business_border:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.075);
+}
+
+/* perform */
+.perform_bg {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 480px;
+    padding: 32px 0;
+}
+.perform_content{
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.perform_content h2 {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.perform_content p {
+    font-size: 16px;
+    color: #eee;
+    line-height: 25px;
+    margin: 24px 0 48px 0;
+}
+.perform_btn .btn-outline-primary {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    transition: all 0.5s;
+}
+.perform_btn .btn-outline-primary:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+.perform_btn .btn {
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 30px;
 }
