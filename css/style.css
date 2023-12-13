@@ -184,7 +184,7 @@ header{
     border-radius: 6px;
     transition: all 0.5s;
     background: #F7F9FC;
-    padding: 3rem 2rem;
+    padding: 50px 30px;
     border: 1px solid #F7F9FC;
 }
 .tools_item h3{
@@ -206,4 +206,45 @@ header{
     border: 1px solid #f8f9fa;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
     transform: translateY(-0.5rem);
+}
+
+/* business */
+.business {
+    background-color:#F7F9FC;
+}
+.business_text h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    margin-bottom: 5px;
+}
+.business_text h3 {
+    font-size: 35px;
+    line-height: 40px;
+    color: #2C3038;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.business_text p {
+    color: #5a5a5a;
+    line-height: 25px;
+}
+.business_btn .btn-outline-primary {
+    color: #fff;
+    background-color: #dc4f72;
+    border-style: none;
+}
+.business_btn .btn {
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+}
+.business_img img{
+    transition: all 0.5s;
+}
+.business_img img:hover {
+    transform: translateY(-10px);
 }
