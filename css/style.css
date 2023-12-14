@@ -319,3 +319,110 @@ header{
     font-size: 14px;
     padding: 0px 30px;
 }
+
+
+/* general */
+.general_title h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    margin-bottom: 5px;
+}
+.general_title h3 {
+    color: #2C3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+.general_title p {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+    margin: 16px auto;
+    max-width: 750px;
+}
+.general .general_item ul {
+    list-style: none;
+    max-width: 100%;
+}
+.general .general_item ul li {
+    position: relative;
+    padding: 32px 50px 32px 32px;
+    border: 1px solid #eee;
+    margin: 0 0 16px 0;
+    border-radius: 6px;
+    background: #fff;
+}
+.general .general_item ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0px;
+    appearance: none;
+}
+.general .general_item ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 25px;
+    top: 24px;
+}
+.general .general_item ul li i:before, .general .general_item ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #2C3038;
+    width: 3px;
+    height: 9px;
+}
+.general .general_item ul li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+.general .general_item ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+.general .general_item ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+.general .general_item ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+.general .general_item h2 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    display: inline-block;
+    cursor: pointer;
+    color: #2C3038;
+    margin-bottom: 0;
+}
+.general .general_item p {
+    color: #5a5a5a;
+    line-height: 25px;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+.general .general_item ul li input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+.general .general_item, .general .general_item p, .general .general_item ul li i:before, .general .general_item ul li i:after {
+    transition: all 0.25s ease-in-out;
+}
+.general_img img{
+    transition: all 0.5s;
+    position: sticky;
+    top: 170px;
+}
+.general_img img:hover {
+    transform: translateY(-10px);
+}
