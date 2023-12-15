@@ -428,6 +428,27 @@ header{
 }
 
 /* project */
+.project_text h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    margin-bottom: 5px;
+}
+.project_text h3 {
+    color: #2C3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+.project_text p {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+    margin: 16px auto;
+    max-width: 750px;
+}
 .project_number{
     max-width: 992px;
     margin: 0 auto;
@@ -454,5 +475,46 @@ header{
 .project_number .nav-pills, .project_number .nav-link.active{
     color: #dc4f72 !important;
     background-color: transparent !important;
+}
+.project .tab-content img{
+    transition: all 0.5s;
+}
+.project .tab-content h3 {
+    color: #2C3038;
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.project .tab-content p {
+    color: #5a5a5a;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.project_btn .btn-outline-primary {
+    color: #dc4f72;
+    border-color: #dc4f72;
+}
+.project_btn .btn {
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 20px;
+    transition: all 1s;
+    text-transform: uppercase;
+}
+.project_btn .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+.project_btn a:hover{
+    outline: 0;
+}
+.project .tab-content img:hover {
+    transform: translateY(-10px);
 }
 
