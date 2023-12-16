@@ -738,3 +738,89 @@ footer a:hover {
     color: #dc4f72 !important;
     transition: 0.5s ease;
 }
+
+/* back to top */
+.back_to_top{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #f55f8d;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+}
+.back_to_top  i{
+    color: white;
+}
+/* style of button back to top  */
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 0.8;
+} 
+.cd-top--is-visible:hover {
+    opacity: 1;
+}
+
+/* responsive */
+@media screen and (max-width: 576px){
+    /* header */
+    header{
+        height: auto;
+    }
+    header .navbar .navbar-toggler{
+        border: 1px solid #dc4f72;
+        background: #dc4f72;
+        padding: 4px 6px;
+    }
+    header .navbar .navbar-toggler:focus{
+        box-shadow: none;
+        border: 1px solid #f0bf0d;
+    }
+    header .navbar-nav li, header .search, header .schedule{
+        text-align: center;
+    }
+    .navbar a.nav-link::before, .navbar a.dropdown-item::before {
+        display: none;
+    }
+    .navbar .navbar-nav .nav-item .dropdown_icon i{
+        top: 15px;
+    }
+    .navbar .btn{
+        line-height: 44px;
+        padding: 0 20px;
+    }
+    .navbar .schedule{
+        margin-bottom: 15px;
+    }
+    
+    /* banner */
+    .banner{
+        margin-top: 70px;
+    }
+    .banner_start h2{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .banner .btn{
+        line-height: 44px;
+        padding: 0 20px;
+    }
+
+    /* tools */
+    .tools_text h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .tools_service{
+        flex-direction: column;
+    }
+    
+    /* business */
+    .business_text{
+        width: 100% !important;
+    }
+
+}
