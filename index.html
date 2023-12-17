@@ -84,10 +84,19 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
+            <div id="myOverlay" class="overlay">
+              <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+              <div class="overlay-content">
+                <form action="#">
+                  <input type="text" placeholder="Enter Keyword" name="search">
+                  <button type="submit">Search</button>
+                </form>
+              </div>
+            </div>
             <div class="search me-md-3">
-              <a href="#">
+              <button class="openBtn" onclick="openSearch() ">
                 <i class="fa-solid fa-magnifying-glass"></i>
-              </a>
+              </button>
             </div>
             <div class="schedule me-md-3 ">
               <a class="btn btn-outline-primary" href="#">
