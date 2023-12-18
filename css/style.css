@@ -23,7 +23,6 @@ a {
 }
 
 .navbar .navbar-nav .nav-item a {
-    font-size: 16px;
     font-weight: 400;
     transition: all 0.5s;
     color: #2C3038;
@@ -172,7 +171,6 @@ a {
     display: inline-block;
     line-height: 52px;
     font-weight: 700;
-    font-size: 16px;
     margin: 0px;
     padding: 0px 30px;
     transition: all 1s;
@@ -244,7 +242,6 @@ header {
     display: inline-block;
     line-height: 52px;
     font-weight: 700;
-    font-size: 16px;
     margin: 0px;
     padding: 0px 20px;
     transition: all 1s;
@@ -268,7 +265,6 @@ header {
 }
 
 .tools_text h6 {
-    font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     color: #dc4f72;
@@ -284,7 +280,6 @@ header {
 
 .tools_text p {
     color: #5a5a5a;
-    font-size: 16px;
     line-height: 23px;
     font-weight: 400;
     margin-left: auto;
@@ -311,7 +306,6 @@ header {
 .tools_item p {
     color: #5a5a5a;
     margin-top: 15px;
-    font-size: 16px;
     line-height: 25px;
 }
 
@@ -324,12 +318,7 @@ header {
 }
 
 /* business */
-.business {
-    background-color: #F7F9FC;
-}
-
 .business_text h6 {
-    font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     color: #dc4f72;
@@ -387,7 +376,6 @@ header {
 }
 
 .business_number_item h6 {
-    font-size: 16px;
     line-height: 25px;
     color: #2C3038;
     font-weight: 700;
@@ -432,7 +420,6 @@ header {
 }
 
 .perform_content p {
-    font-size: 16px;
     color: #eee;
     line-height: 25px;
     margin: 24px 0 48px 0;
@@ -461,7 +448,6 @@ header {
 
 /* general */
 .general_title h6 {
-    font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     color: #dc4f72;
@@ -477,7 +463,6 @@ header {
 
 .general_title p {
     color: #5a5a5a;
-    font-size: 16px;
     line-height: 22.5px;
     font-weight: 400;
     margin: 16px auto;
@@ -583,7 +568,6 @@ header {
 
 /* project */
 .project_text h6 {
-    font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     color: #dc4f72;
@@ -599,7 +583,6 @@ header {
 
 .project_text p {
     color: #5a5a5a;
-    font-size: 16px;
     line-height: 22.5px;
     font-weight: 400;
     margin: 16px auto;
@@ -654,7 +637,6 @@ header {
 .project .tab-content p {
     color: #5a5a5a;
     margin-bottom: 16px;
-    font-size: 16px;
     line-height: 25px;
 }
 
@@ -700,7 +682,6 @@ header {
 }
 
 .people_title h6 {
-    font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     color: #dc4f72;
@@ -716,7 +697,6 @@ header {
 
 .people_title p {
     color: #5a5a5a;
-    font-size: 16px;
     line-height: 22.5px;
     font-weight: 400;
     margin: 16px auto;
@@ -828,7 +808,6 @@ header {
 
 .community_text p {
     color: #5a5a5a;
-    font-size: 16px;
     line-height: 23px;
     font-weight: 400;
 }
