@@ -703,11 +703,6 @@ header {
     max-width: 750px;
 }
 
-.people_say {
-    max-width: 90%;
-    margin: 0 auto;
-}
-
 .people_content {
     display: grid;
     grid-template-columns: auto auto;
