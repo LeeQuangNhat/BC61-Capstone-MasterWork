@@ -26,8 +26,8 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <header class="header fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
       <div class="container">
         <a class="navbar-brand me-0" href="#">
           <h1 class="mb-0">
@@ -41,16 +41,16 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item p-md-3 position-relative">
+            <li class="nav-item px-md-3 position-relative">
               <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
-            <li class="nav-item p-md-3 position-relative">
+            <li class="nav-item px-md-3 position-relative">
               <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item p-md-3 position-relative">
+            <li class="nav-item px-md-3 position-relative">
               <a class="nav-link" href="#">Services</a>
             </li>
-            <li class="nav-item p-md-3 position-relative dropdown">
+            <li class="nav-item px-md-3 position-relative dropdown">
               <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pages
                 <span class="dropdown_icon"><i class="fa-solid fa-chevron-down"></i></span>
@@ -67,7 +67,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item p-md-3 position-relative">
+            <li class="nav-item px-md-3 position-relative">
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
@@ -92,6 +92,7 @@
       </div>
     </nav>
   </header>
+  </div>
   <section class="banner">
     <div class="banner_bg">
       <div class="container">
@@ -285,12 +286,10 @@
       </div>
     </div>
   </section>
-
-
   <section class="products bg-light py-5">
     <div class="container py-lg-3">
       <div class="best_products">
-        <div class="title text-center mb-5">
+        <div class="text_all text-center mb-5">
           <h6> THE BEST PRODUCTS</h6>
           <h3>How we make your strategy business</h3>
           <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
@@ -371,7 +370,7 @@
   </section>
   <section class="general py-4 bg-light">
     <div class="container py-lg-5 ">
-      <div class="general_title text-center">
+      <div class="text_all text-center">
         <h6>QUESTIONS AND ANSWERS</h6>
         <h3>General FAQs</h3>
         <p>
@@ -513,7 +512,7 @@
   </section>
   <section class="project text-center py-5 mb-4">
     <div class="container">
-      <div class="project_text">
+      <div class="text_all">
         <h6>FEATURED CASES</h6>
         <h3>Completed Projects</h3>
         <p>
@@ -620,7 +619,7 @@
   <section class="people">
     <div class="people_bg pt-5">
       <div class="container py-3">
-        <div class="people_title text-center">
+        <div class="text_all text-center">
           <h6>OUR CLIENTS TESTIMONIALS</h6>
           <h3>What People Say</h3>
           <p>
@@ -736,7 +735,76 @@
       </div>
     </div>
   </section>
-
+  <section class="contact">
+    <div class="container py-5">
+      <div class="contact_title mb-5 text-center">
+        <h2 style="color: #2c3038; font-size: 46px; line-height: 55px; font-weight: 800;">Contact Us</h2>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <img src="../img/contact.jpg" alt="" class="w-100 rounded-2">
+        </div>
+        <div class=" contact_box col-lg-6 shadow">
+          <div class="contact_text">
+            <h3>Drop us a Message</h3>
+            <p class="mt-2 mb-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices turpis sodales quis.
+              Integer sit amet mattis quam.</p>
+          </div>
+          <div class="contact_form">
+            <form action="" method="post" class="">
+              <div class="main-input d-flex flex-column">
+                <input type="text" placeholder="Enter your name" class="contact-input" required="">
+                <input type="email" placeholder="Enter your mail" class="contact-input" required="">
+                <input type="text" placeholder="Subject" class="contact-input">
+                <textarea class="contact-textarea contact-input" placeholder="Enter your message" required=""
+                  style="height: 130px; resize: none;"></textarea>
+              </div>
+              <div class="contact_btn text-end">
+                <a class="btn btn-outline-primary" href="#"> SEND </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="touch bg-light py-5">
+    <div class="container">
+      <div class="text_all text-center">
+        <h6>GET IN TOUCH</h6>
+        <h3>We’re here to help</h3>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+          turpis sodales quis. Integer sit amet mattis quam.
+        </p>
+      </div>
+      <div class="touch_service row  mt-5 text-center">
+        <div class="touch_item col-4 shadow  ">
+          <i class="fa-solid fa-location-arrow"></i>
+          <h3>Our head office address:</h3>
+          <p>8th-block road, cross avenue, <br>Lorem dolor sit, New York, USA</p>
+        </div>
+        <div class="touch_item col-4 shadow mx-5 ">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Call for help:</h3>
+          <p>
+            <a href="tel:+040-123-456-88">
+            +040-123-456-88</a>
+          </p>
+          <p>
+            <a href="tel:+040-123-456-89">
+            +040-123-456-89</a>
+          </p>
+        </div>
+        <div class="touch_item col-4 shadow ">
+          <i class="fa-solid fa-location-arrow"></i>
+          <h3>Our head office address:</h3>
+          <p>8th-block road, cross avenue, <br>Lorem dolor sit, New York, USA</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <div class="bg-light py-5">
       <div class="container">
@@ -853,6 +921,19 @@
   <script src="../js/jquery.countup.js"></script>
   <script>
     $(".counter").countUp();
+  </script>
+  <!-- header -->
+  <script>
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop() > 50) {
+        $(".header").addClass("active");
+        $(".navbar").addClass("active");
+      } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $(".header").removeClass("active");
+        $(".navbar").removeClass("active");
+      }
+    });
   </script>
 </body>
 

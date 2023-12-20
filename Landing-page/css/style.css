@@ -14,7 +14,34 @@ a {
     text-decoration: none;
 }
 
+.text_all {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.text_all h6 {
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    margin-bottom: 5px;
+}
+
+.text_all h3 {
+    color: #2C3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.text_all p {
+    color: #5a5a5a;
+    line-height: 22.5px;
+    font-weight: 400;
+    margin: 16px auto;
+}
+
 /* header */
+
 .navbar .navbar-brand h1 {
     font-size: 26px;
     font-weight: 700;
@@ -36,7 +63,7 @@ a {
     font-size: 10px;
     position: absolute;
     right: 5px;
-    top: 32px;
+    top: 16px;
 }
 
 .navbar a.nav-link::before,
@@ -51,7 +78,7 @@ a {
 }
 
 .navbar .nav-item a.nav-link::before {
-    bottom: 20px;
+    bottom: 5px;
 }
 
 .navbar a.nav-link:hover::before,
@@ -187,19 +214,29 @@ a {
     outline: 0;
 }
 
-header {
+header.header {
     background-color: #fff;
     padding: 0px;
     height: 90px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
+    transition: all 0.5s ease-in-out;
 }
 
+header.header.active {
+    background-color: #fff;
+    padding: 0px;
+    height: 70px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
 
+header .navbar {
+    transition: all 0.5s ease-in-out;
+}
+
+header .navbar.active {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+}
 
 /* banner */
 .banner {
@@ -427,36 +464,16 @@ header {
 }
 
 /* products */
-.products .title{
+.products .title {
     max-width: 750px;
     margin: 0 auto;
-}
-.products .title h6 {
-    color: #DC4F72;
-    font-weight: 700;
-    line-height: 20px;
-    margin-bottom: 5px;
-}
-
-.products .title h3 {
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 1;
-    color: #2C3038;
-}
-
-.products .title p {
-    color: #5a5a5a;
-    line-height: 23px;
-    font-weight: 400;
-    margin: 16px 0;
 }
 
 .products .bg img {
     border-radius: 50%;
-    width: 100%;
+    max-width: 100%;
     transition: all 0.5s;
-    border: 5px solid #f8f9fa;   
+    border: 5px solid #f8f9fa;
 }
 
 .products .bg img:hover {
@@ -489,16 +506,6 @@ header {
 .products .document h4:hover {
     color: #DC4F72;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* perform */
 .perform_bg {
@@ -553,27 +560,6 @@ header {
 
 
 /* general */
-.general_title h6 {
-    line-height: 20px;
-    font-weight: 700;
-    color: #dc4f72;
-    margin-bottom: 5px;
-}
-
-.general_title h3 {
-    color: #2C3038;
-    font-size: 46px;
-    line-height: 1;
-    font-weight: 700;
-}
-
-.general_title p {
-    color: #5a5a5a;
-    line-height: 22.5px;
-    font-weight: 400;
-    margin: 16px auto;
-    max-width: 750px;
-}
 
 .general .general_item ul li {
     position: relative;
@@ -673,27 +659,6 @@ header {
 }
 
 /* project */
-.project_text h6 {
-    line-height: 20px;
-    font-weight: 700;
-    color: #dc4f72;
-    margin-bottom: 5px;
-}
-
-.project_text h3 {
-    color: #2C3038;
-    font-size: 46px;
-    line-height: 1;
-    font-weight: 700;
-}
-
-.project_text p {
-    color: #5a5a5a;
-    line-height: 22.5px;
-    font-weight: 400;
-    margin: 16px auto;
-    max-width: 750px;
-}
 
 .project_number {
     max-width: 992px;
@@ -787,28 +752,6 @@ header {
     padding-bottom: 90px;
 }
 
-.people_title h6 {
-    line-height: 20px;
-    font-weight: 700;
-    color: #dc4f72;
-    margin-bottom: 5px;
-}
-
-.people_title h3 {
-    color: #2C3038;
-    font-size: 46px;
-    line-height: 1;
-    font-weight: 700;
-}
-
-.people_title p {
-    color: #5a5a5a;
-    line-height: 22.5px;
-    font-weight: 400;
-    margin: 16px auto;
-    max-width: 750px;
-}
-
 .people_content {
     display: grid;
     grid-template-columns: auto auto;
@@ -891,6 +834,125 @@ header {
 /* .people .carousel-control-next-icon,.people .carousel-control-prev-icon {
     appearance: none;
 } */
+
+/* contact */
+.contact_box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 6px;
+    position: relative;
+    left: -75px;
+}
+
+.contact_form input.contact-input,
+.contact_form textarea {
+    outline: none;
+    padding: 15px 20px;
+    appearance: none;
+    /* border-radius: 0; */
+    color: #2C3038;
+    font-weight: 600;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #f8f9fa;
+    background: #F7F9FC;
+}
+
+.contact_btn .btn-outline-primary {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.contact_btn .btn {
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 60px;
+    transition: all 1s;
+}
+
+.contact_btn .btn-outline-primary:hover {
+    background-color: #d62f58;
+    border-color: #cf2952;
+}
+
+.contact img {
+    transition: all 0.5s;
+}
+
+.contact img:hover {
+    transform: translateY(-10px);
+}
+
+.contact_text h3 {
+    color: #2C3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.contact_box p {
+    color: #5a5a5a;
+    line-height: 23px;
+    font-weight: 400;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+
+/* touch */
+
+.touch_item {
+    border-radius: 6px;
+    transition: all 0.5s;
+    background: #fff;
+    padding: 32px;
+    border: 1px solid #fff;
+}
+
+.touch_item h3 {
+    font-size: 20px;
+    color: #2C3038;
+    margin: 20px 0 10px 0;
+    font-weight: 700;
+}
+
+.touch_item p {
+    font-size: 18px;
+    color: #5a5a5a;
+    line-height: 28px;
+    font-weight: 600;
+}
+.touch_item a {
+    display: block;
+    color: #5a5a5a;
+    transition: 0.3s ease-in;
+}
+.touch_item i {
+    width: 60px;
+    margin: 0 auto;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 60px;
+    background: rgba(220, 79, 114, 0.1);
+    font-size: 20px;
+    color: #dc4f72;
+    line-height: 60px;
+}
+
+.touch_item:hover {
+    transition: all 0.5s;
+    background: #fff;
+    border: 1px solid #f8f9fa;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    transform: translateY(-0.5rem);
+}
 
 
 
