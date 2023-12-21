@@ -89,6 +89,7 @@ a {
 .navbar a.nav-link:hover,
 .navbar a.dropdown-item:hover {
     color: #DE5879;
+    background: none;
 }
 
 .navbar .search button {
@@ -200,7 +201,7 @@ a {
 
 .navbar .btn {
     display: inline-block;
-    line-height: 52px;
+    line-height: 50px;
     font-weight: 700;
     margin: 0px;
     padding: 0px 30px;
@@ -219,7 +220,7 @@ a {
 }
 
 header.header {
-    background-color: #ffff;
+    background-color: #fff;
     padding: 0px;
     height: 90px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
@@ -238,8 +239,8 @@ header .navbar {
 }
 
 header .navbar.active {
-    padding-top: 14px !important;
-    padding-bottom: 14px !important;
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
 }
 
 /* breadcrumb  */

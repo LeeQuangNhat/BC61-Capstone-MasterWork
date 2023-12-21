@@ -88,6 +88,7 @@ a {
 .navbar a.nav-link:hover,
 .navbar a.dropdown-item:hover {
     color: #DE5879;
+    background: none;
 }
 
 .navbar .search button {
@@ -203,7 +204,7 @@ a {
 
 .navbar .btn {
     display: inline-block;
-    line-height: 52px;
+    line-height: 50px;
     font-weight: 700;
     margin: 0px;
     padding: 0px 30px;
@@ -241,8 +242,8 @@ header .navbar {
 }
 
 header .navbar.active {
-    padding-top: 14px !important;
-    padding-bottom: 14px !important;
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
 }
 
 
@@ -469,9 +470,9 @@ header .navbar.active {
 
 .general .general_item ul li {
     position: relative;
-    padding: 25px 50px 25px 25px;
+    padding: 25px 50px 25px 20px;
     border: 1px solid #eee;
-    margin: 0 0 16px 0;
+    margin: 0 0 15px 0;
     border-radius: 6px;
     background: #fff;
 }
@@ -522,7 +523,6 @@ header .navbar.active {
 .general .general_item h2 {
     font-size: 20px;
     line-height: 1;
-    font-weight: normal;
     display: inline-block;
     cursor: pointer;
     color: #2C3038;
@@ -558,6 +558,8 @@ header .navbar.active {
     transition: all 0.5s;
     position: sticky;
     top: 150px;
+    height: auto;
+    max-width: 100%;
 }
 
 .general_img img:hover {
@@ -918,6 +920,9 @@ footer a:hover {
     header .schedule {
         text-align: center;
     }
+    header .navbar-collapse{
+        background-color: #FFFFFF;
+    }
 
     .navbar a.nav-link::before,
     .navbar a.dropdown-item::before {
@@ -941,6 +946,8 @@ footer a:hover {
     .banner {
         margin-top: 70px;
     }
+
+    
 
     .banner_start h2 {
         font-size: 40px;
