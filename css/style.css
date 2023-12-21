@@ -327,6 +327,7 @@ header .navbar.active {
     color: #5a5a5a;
     margin-top: 15px;
     line-height: 25px;
+    margin-bottom: 0;
 }
 
 .tools_item:hover {
@@ -897,6 +898,94 @@ footer a:hover {
 }
 
 /* responsive */
+@media screen and (max-width: 1200px) {
+    /* header */
+    header .navbar .btn {
+        line-height: 40px;
+        font-weight: 700;
+        padding: 0px 20px;
+    }
+}
+@media screen and (max-width: 992px) {
+     /* header */
+     header {
+        height: auto;
+    }
+
+    header .navbar .navbar-toggler {
+        border: 1px solid #dc4f72;
+        background: #dc4f72;
+        padding: 4px 6px;
+    }
+
+    header .navbar .navbar-toggler:focus {
+        box-shadow: none;
+        border: 1px solid #f0bf0d;
+    }
+
+    header .navbar-nav li,
+    header .search,
+    header .schedule {
+        text-align: center;
+    }
+    header .navbar-collapse{
+        background-color: #FFFFFF;
+        width: 100%;
+    }
+
+    .navbar a.nav-link::before,
+    .navbar a.dropdown-item::before {
+        display: none;
+    }
+
+    .navbar .navbar-nav .nav-item .dropdown_icon i {
+        top: 15px;
+    }
+
+    .navbar .btn {
+        line-height: 44px;
+        padding: 0 20px;
+    }
+
+    .navbar .schedule {
+        margin-bottom: 15px;
+    }
+
+     /* banner */
+     .banner {
+        margin-top: 70px;
+    }
+
+    .banner_start h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .banner .btn {
+        line-height: 44px;
+        padding: 0 20px;
+    }
+
+    /* tools */
+    .tools_text h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .tools_service {
+        flex-direction: column;
+    }
+
+    /* business */
+    .business_text {
+        width: 100% !important;
+    }
+    .business_img img{
+        width: 100%;
+        height: auto;
+    }
+
+}
 @media screen and (max-width: 576px) {
 
     /* header */
@@ -947,8 +1036,6 @@ footer a:hover {
         margin-top: 70px;
     }
 
-    
-
     .banner_start h2 {
         font-size: 40px;
         line-height: 45px;
@@ -972,6 +1059,10 @@ footer a:hover {
     /* business */
     .business_text {
         width: 100% !important;
+    }
+    .business_img img{
+        width: 100%;
+        height: auto;
     }
 
 }
