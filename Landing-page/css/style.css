@@ -429,7 +429,6 @@ header .navbar.active {
     font-size: 46px;
     text-align: center;
     font-weight: 800;
-    padding: 30px;
 }
 
 .services .content_left h3 {
@@ -1124,6 +1123,7 @@ footer a:hover {
       line-height: 44px;
       padding: 0 20px;
     }
+
   
     /* business */
   
@@ -1140,7 +1140,23 @@ footer a:hover {
       font-size: 40px;
       line-height: 50px;
     }
-  
+
+    /* services */
+    .services h2{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .services .content_left h3 {
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    /* .products */
+    .products .bg img {
+        width: 300px;
+        margin: 20px auto 40px;
+    }
+
     /* general */
     .general .general_item h2 {
       font-size: 18px;
