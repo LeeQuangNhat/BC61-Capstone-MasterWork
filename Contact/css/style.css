@@ -150,8 +150,8 @@ a {
 
 .navbar .overlay .closebtn {
     position: absolute;
-    right: 34%;
-    top: 40%;
+    right: 0;
+    top: -80px;
     transition: all 200ms;
     font-size: 30px;
     text-decoration: none;
@@ -620,6 +620,10 @@ footer a:hover {
     .text_all h3 {
       font-size: 32px;
       line-height: 42px;
+    }
+
+    .navbar .overlay .closebtn {
+        right: 10px;
     }
   
     /* banner */

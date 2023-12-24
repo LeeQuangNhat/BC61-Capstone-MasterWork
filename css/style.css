@@ -149,8 +149,8 @@ a {
 
 .navbar .overlay .closebtn {
   position: absolute;
-  right: 34%;
-  top: 40%;
+  right: 0;
+  top: -80px;
   transition: all 200ms;
   font-size: 30px;
   text-decoration: none;
@@ -504,7 +504,7 @@ header .navbar.active {
   height: 9px;
 }
 
-.general .general_item ul li input[type="checkbox"]:checked ~ i:before {
+.general .general_item ul li input[type="checkbox"]:checked~i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
 
@@ -512,7 +512,7 @@ header .navbar.active {
   transform: translate(-2px, 0) rotate(45deg);
 }
 
-.general .general_item ul li input[type="checkbox"]:checked ~ i:after {
+.general .general_item ul li input[type="checkbox"]:checked~i:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
@@ -540,7 +540,7 @@ header .navbar.active {
   margin-bottom: 0;
 }
 
-.general .general_item ul li input[type="checkbox"]:checked ~ p {
+.general .general_item ul li input[type="checkbox"]:checked~p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
@@ -891,6 +891,7 @@ footer a:hover {
 
 /* responsive */
 @media screen and (max-width: 1200px) {
+
   /* header */
   header .navbar .btn {
     line-height: 40px;
@@ -900,6 +901,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 992px) {
+
   /* header */
   header {
     height: auto;
@@ -989,7 +991,7 @@ footer a:hover {
   }
 
   /* footer */
-  footer .container > div {
+  footer .container>div {
     flex-direction: column;
   }
 
@@ -1002,6 +1004,10 @@ footer a:hover {
   .text_all h3 {
     font-size: 32px;
     line-height: 42px;
+  }
+
+  .navbar .overlay .closebtn {
+    right: 10px;
   }
 
   /* banner */

@@ -150,8 +150,8 @@ a {
 
 .navbar .overlay .closebtn {
     position: absolute;
-    right: 34%;
-    top: 40%;
+    right: 0;
+    top: -80px;
     transition: all 200ms;
     font-size: 30px;
     text-decoration: none;
@@ -1059,6 +1059,11 @@ footer a:hover {
 }
 
 /* responsive */
+@media screen and (min-width: 1400px) {
+    .products .bg img {
+        max-width: 75%;
+    }
+}
 @media screen and (max-width: 1200px) {
     /* header */
     header .navbar .btn {
@@ -1113,6 +1118,7 @@ footer a:hover {
     .navbar .schedule {
       margin-bottom: 15px;
     }
+    
   
     /* banner */
     .banner {
@@ -1199,6 +1205,9 @@ footer a:hover {
     .text_all h3 {
       font-size: 32px;
       line-height: 42px;
+    }
+    .navbar .overlay .closebtn {
+        right: 10px;
     }
   
     /* banner */
