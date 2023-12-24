@@ -193,10 +193,6 @@ a {
   opacity: 0.8;
 }
 
-.navbar .overlay button:hover {
-  background: #bbb;
-}
-
 .navbar .btn-outline-primary {
   color: #dc4f72;
   border-color: #dc4f72;
