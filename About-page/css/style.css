@@ -916,12 +916,6 @@ footer a:hover {
     margin: 0 auto; 
 }
 
-.solutions .play-view {
-    left: 0;
-    right: 0;
-    top: calc(50% - 40px); 
-}
-
 .solutions .modal-header {
     border-bottom: none;
     background:#fff; 
@@ -990,12 +984,12 @@ footer a:hover {
 .solutions a span  { 
     position: absolute;
     color: #cf2952;
-    background:#eee; 
+    background:#fff; 
     display: inline-block;
     width: 55px;
     height: 55px; 
-    top: calc(50% - 45px);
-    left: calc(50% - 45px);
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
      border-radius: 50%; 
     transition: all 0.3s; 
 } 
