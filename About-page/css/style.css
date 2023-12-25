@@ -432,6 +432,7 @@ carousel */ .carousel .item {
 .team_members .title h6 {
     color: #dc4f72;
     font-weight: 700;
+
 }
 
 .team_members .title h3 {
@@ -442,56 +443,45 @@ carousel */ .carousel .item {
 .team_members .title p {
     color: #5a5a5a;
     padding: 20px 0;
-}
-
-.team_members .members {
-    padding: 40px;
-}
-
-.team_members .infor {
-    padding-bottom: 30px;
-}
-
-.team_members .name_item {
-    padding: 20px;
-}
-
-.team_members .bg img {
-    max-width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    overflow: hidden;
 
 }
 
-.team_members .infor_name {
-    position: relative;
-    height: 100%;
-}
-
-.team_members .name {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.team_members .bg {
     width: 100%;
-    max-height: 40%;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-radius: 0 0 8px 8px;
+    height: 250px;
     display: inline-block;
     overflow: hidden;
+    background: #f3f6f9; }
 
+.team_members .bg img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+   border-radius: 6px 6px 0 0 ;
 }
+.team_members .team-info p {
+    font-size: 16px;
+    line-height: 24px;
+    color:#656f7b;
+    margin: 2px 0px 14px; 
 
-.team_members .name h4 {
-    font-size: 20px;
-    font-weight: 700;
+}      
+.team_members .team-info h3 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700; 
     transition: all 0.3s;
 }
-
-.team_members .name span {
-    color: #5a5a5a;
-    font-size: 16px;
+.team_members .team-info:hover h3 {
+    color:#DC4F72;
+}
+.team_members .info {
+    box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.075);
+    padding: 16px;
+    border-radius: 0 0 6px 6px;
+    border-top: none;
+    margin-top: -6px; 
 }
 
 .team_members .icon {
@@ -512,27 +502,23 @@ carousel */ .carousel .item {
     color: white;
 }
 
-.team_members a.fb {
+.team_members a.facebook {
     background-color: #3B5998;
 }
 
-.team_members a.tw {
+.team_members a.twitter {
     background-color: #1DA1F2;
 }
 
-.team_members .infor_name:hover h4 {
-    color: #DC4F72;
+.team_members .team_item{
+    transition: all 0.3s;
+    padding-top: 30px;
 }
-
-.team_members .infor_name {
-    transition: all 0.5s;
-
-}
-
-.team_members .infor_name:hover {
+  .team_item:hover{
     transform: translateY(-10px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.075);
-}
+  }
+
+  
 
 /* brand  */
 .brand .brand_content h2 {
@@ -703,91 +689,155 @@ footer a:hover {
 }
 
 
-/* responsive */
-@media screen and (max-width: 1200px) {
 
-    /* header */
-    header .navbar .btn {
-        line-height: 40px;
-        font-weight: 700;
-        padding: 0px 20px;
+/* responsive */
+@media screen and (min-width: 1400px) {
+    .products .bg img {
+        max-width: 75%;
     }
 }
-
-@media screen and (max-width: 992px) {
-
+@media screen and (max-width: 1200px) {
+    /* header */
+    header .navbar .btn {
+      line-height: 40px;
+      font-weight: 700;
+      padding: 0px 20px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
     /* header */
     header {
-        height: auto;
+      height: auto;
     }
-
+  
     header .navbar .navbar-toggler {
-        border: 1px solid #dc4f72;
-        background: #dc4f72;
-        padding: 4px 6px;
+      border: 1px solid #dc4f72;
+      background: #dc4f72;
+      padding: 4px 6px;
     }
-
+  
     header .navbar .navbar-toggler:focus {
-        box-shadow: none;
-        border: 1px solid #f0bf0d;
+      box-shadow: none;
+      border: 1px solid #f0bf0d;
     }
-
+  
     header .navbar-nav li,
     header .search,
     header .schedule {
-        text-align: center;
+      text-align: center;
     }
-
+  
     header .navbar-collapse {
-        background-color: #ffffff;
-        width: 100%;
+      background-color: #ffffff;
+      width: 100%;
     }
-
+  
     .navbar a.nav-link::before,
     .navbar a.dropdown-item::before {
-        display: none;
+      display: none;
     }
-
+  
     .navbar .navbar-nav .nav-item .dropdown_icon i {
-        top: 15px;
+      top: 15px;
     }
-
+  
     .navbar .btn {
-        line-height: 44px;
-        padding: 0 20px;
+      line-height: 44px;
+      padding: 0 20px;
     }
-
+  
     .navbar .schedule {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    
+  
+    /* banner */
+    .banner {
+      margin-top: 70px;
+    }
+  
+    .banner .btn {
+      line-height: 44px;
+      padding: 0 20px;
     }
 
-    /* .features */
-    .features .features_item {
-        padding-bottom: 30px;
+  
+    /* business */
+  
+    .business_img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .business_text {
+      width: 100% !important;
+    }
+  
+    .business_number_item p.counter {
+      font-size: 40px;
+      line-height: 50px;
     }
 
+    /* services */
+    .services h2{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .services .content_left h3 {
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    /* .products */
+    .products .bg img {
+        width: 300px;
+        margin: 20px auto 40px;
+    }
+
+    /* general */
+    .general .general_item h2 {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  
+    /* .project */
+    .project .project_number li.nav-item p {
+      text-align: left;
+    }
+  
+    /* touch */
+    .touch .touch_service{
+        display: flex;
+        flex-direction: column;
+    }
     /* news  */
     .news .news_title {
         display: flex;
         justify-content: center;
     }
+    /* contact */
 
-    /* community */
-    .community_btn .btn {
-        line-height: 44px;
-        padding: 0 20px;
+    .contact_box{
+        left: 0;
+        top: -20px;
+    }
+    .contact_text h3 {
+        font-size: 32px;
+        line-height: 42px;
     }
 
     /* footer */
-    footer .container>div {
-        flex-direction: column;
+    footer .container > div {
+      flex-direction: column;
     }
-
+  
     footer h3 {
-        margin-bottom: 18px;
+      margin-bottom: 18px;
     }
-}
-@media screen and (max-width: 576px) {
+  }
+  
+  @media screen and (max-width: 576px) {
     .text_all h3 {
       font-size: 32px;
       line-height: 42px;
@@ -795,4 +845,46 @@ footer a:hover {
     .navbar .overlay .closebtn {
         right: 10px;
     }
-}
+  
+    /* banner */
+  
+    .banner_start h2 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  
+  
+    /* business */
+    .business_btn .btn {
+      line-height: 44px;
+      padding: 0 20px;
+    }
+  
+    /* perform */
+    .perform_content p {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 30px;
+    }
+  
+    /* people */
+    .people_content .people_block .people_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .people_block .people_item p,
+    .people_block .people_item h4 {
+      text-align: center;
+    }
+  
+    .people_text i {
+      position: absolute;
+      top: -35px;
+      transform: translateX(50%);
+    }
+  
+  }
+  

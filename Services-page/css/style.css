@@ -591,7 +591,6 @@ footer a:hover {
 
     /* services */
     .services h2 {
-        font-size: 36px;
         line-height: 42px;
     }
 
@@ -599,6 +598,10 @@ footer a:hover {
         font-size: 30px;
         line-height: 1;
     }
+    .services .content_right {
+    padding: 0 15px;
+    }
+
 
     /* .products */
     .products .bg img {
