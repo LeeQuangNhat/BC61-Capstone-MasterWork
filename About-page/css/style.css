@@ -340,7 +340,7 @@ header .navbar.active {
     height: 250px;
     text-align: center;
     transition: all 0.3s ease;
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
 .features .feat_item:hover {
@@ -851,6 +851,10 @@ footer a:hover {
     }
   
   
+    /* features  */
+    .features .feat_item{
+        padding-top: 20px;
+    }
     /* business */
     .business_btn .btn {
       line-height: 44px;
@@ -990,8 +994,8 @@ footer a:hover {
     display: inline-block;
     width: 55px;
     height: 55px; 
-    bottom: 50%;
-    left: 45%;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
      border-radius: 50%; 
     transition: all 0.3s; 
 } 
@@ -1004,24 +1008,6 @@ footer a:hover {
  }
 
 
-/* CSS */
-@keyframes fadeInOut {
-    0%, 100% {
-      box-shadow: 5px solid rgba(255, 255, 255, 0.5); 
-    }
-    50% {
-      box-shadow: 10px solid rgba(255, 255, 255, 1); 
-    }
-  }
-  
-  .solutions .info.span {
-    display: inline-block;
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%;
-    animation: fadeInOut linear infinite; 
-  }
-  
 
   
   
