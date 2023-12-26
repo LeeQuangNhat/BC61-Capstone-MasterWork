@@ -651,6 +651,7 @@ header .navbar.active {
 
 .about .about_bg img {
   transition: all 0.5s;
+  height: 100%;
 }
 
 .about .about_bg img:hover {
@@ -1385,6 +1386,15 @@ footer a:hover {
     position: absolute;
     right: -6px;
     top: 16px;
+  }
+  /* products */
+  .products .bg img {
+    padding-top: 30px;
+  }
+
+  /* about */
+  .about .about_bg img{
+    height: auto ;
   }
 }
 
