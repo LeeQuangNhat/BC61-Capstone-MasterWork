@@ -40,7 +40,233 @@ a {
   margin: 16px auto;
 }
 
+/* mode */
+/* Light theme */
+#myBody {
+  background-color: #FFFFFF;
+}
+
+#switchButton .fa-sun {
+  display: none;
+}
+
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* Dark Theme*/
+.dark#myBody {
+  background-color: #131617;
+}
+
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+
+/* Dark Theme--header*/
+.dark header.header {
+  background-color: #131617;
+}
+
+.dark header.header.active {
+  background-color: #131617;
+}
+
+.dark .navbar .navbar-nav .nav-item a {
+  color: #eee;
+}
+
+.dark .navbar .navbar-nav .nav-item ul{
+  background-color: #131617;
+  border: 1px solid #333;
+}
+
+.dark .navbar .search button {
+  color: #b7b7b7;
+  background: #191c1d;
+  border: 1px solid #333;
+}
+
+.dark .navbar .search button:hover {
+  color: white;
+  opacity: 1;
+}
+
+/* Dark Theme--banner*/
+.dark .banner_bg {
+  background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
+    url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.dark .banner_start h2 {
+  color: #eee;
+}
+
+.dark .banner_start p {
+  color: #b7b7b7;
+}
+
+/* Dark Theme--tools*/
+
+.dark .text_all h3 {
+  color: #eee;
+}
+
+.dark .text_all p {
+  color: #b7b7b7;
+}
+
+.dark .tools_block {
+  background: #191c1d;
+  border: 1px solid #191c1d;
+}
+
+.dark .tools_block h3 {
+  color: #eee;
+}
+
+.dark .tools_block p {
+  color: #b7b7b7;
+}
+
+.dark .tools_block:hover {
+  transition: all 0.5s;
+  background: #131617;
+  border: 1px solid #333;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transform: translateY(-0.5rem);
+}
+
+/* Dark Theme--business*/
+.dark .business{
+  background-color: #191c1d !important;
+}
+
+.dark .business_text h3 {
+  color: #eee;
+}
+
+.dark .business_text p {
+  color: #b7b7b7;
+}
+
+.dark .business_border {
+  background-color: #131617;
+  border: 1px solid #333;
+}
+
+.dark .business_number_item h6 {
+  color: #eee;
+}
+
+.dark .business_number_item p {
+  color: #b7b7b7;
+}
+
+/* Dark Theme--general*/
+.dark .general{
+  background-color: #191c1d !important;
+}
+.dark .general .general_item ul li {
+  border: 1px solid #333;
+  background: #131617;
+}
+
+.dark .general .general_item h2 {
+  color: #eee;
+}
+.dark .general .general_item p {
+  color: #b7b7b7;
+}
+.dark .general .general_item ul li i:before, .dark .general .general_item ul li i:after {
+  background-color: #eee;
+}
+
+/* Dark Theme--project*/
+.dark .project_number .nav li {
+  background: #131617;
+}
+
+.dark .project_number .nav-link {
+  color: #eee;
+  border-bottom: 3px solid #333;
+}
+
+.dark .project .tab-content h3 {
+  color: #eee;
+}
+
+.dark .project .tab-content p {
+  color: #b7b7b7;
+}
+/* Dark Theme--people*/
+.dark .people_bg {
+  background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.77)), url(../img/b2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.dark .people_item{
+  background: #131617;
+}
+.dark .people_text p , .dark .people_text i{
+  color: #eee;
+}
+.dark .people_text .people_name p{
+  color: #b7b7b7;
+}
+.dark .carousel-indicators [data-bs-target] {
+  background-color: #131617;
+}
+
+/* Dark Theme--community*/
+.dark .community_text h3 {
+  color: #eee;
+}
+.dark .community_text p {
+  color: #b7b7b7;
+}
+
+/* Dark Theme--footer*/
+.dark footer> div{
+  background: #191c1d !important;
+}
+.dark footer h3 {
+  color: #eee;
+}
+.dark .footer_form{
+  background: #131617 !important;
+}
+.dark footer h4{
+  color: #eee;
+}
+.dark footer p{
+  color: #b7b7b7;
+}
+.dark .footer_email{
+  background: #191c1d !important;
+}
+.dark .footer_right{
+  border-top: 1px solid #333 !important;
+}
+.dark .footer_icon li a {
+  color: #eee;
+}
+
 /* header */
+header .mode{
+  order: 3;
+}
 .navbar .navbar-brand h1 {
   font-size: 26px;
   font-weight: 700;
@@ -384,7 +610,7 @@ header .navbar.active {
 
 .business_border {
   background-color: #fff;
-  padding: 32px;
+  padding: 25px;
   border-radius: 6px;
   transition: all 0.5s;
   border: 1px solid #f8f9fa;
@@ -500,7 +726,7 @@ header .navbar.active {
   height: 9px;
 }
 
-.general .general_item ul li input[type="checkbox"]:checked~i:before {
+.general .general_item ul li input[type="checkbox"]:checked ~ i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
 
@@ -508,7 +734,7 @@ header .navbar.active {
   transform: translate(-2px, 0) rotate(45deg);
 }
 
-.general .general_item ul li input[type="checkbox"]:checked~i:after {
+.general .general_item ul li input[type="checkbox"]:checked ~ i:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
@@ -536,7 +762,7 @@ header .navbar.active {
   margin-bottom: 0;
 }
 
-.general .general_item ul li input[type="checkbox"]:checked~p {
+.general .general_item ul li input[type="checkbox"]:checked ~ p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
@@ -887,18 +1113,33 @@ footer a:hover {
 
 /* responsive */
 @media screen and (max-width: 1200px) {
-
   /* header */
   header .navbar .btn {
     line-height: 40px;
     font-weight: 700;
     padding: 0px 20px;
   }
+  header .nav-item{
+    padding-right: 0px !important;
+  }
+  .navbar .navbar-nav .nav-item .dropdown_icon i {
+    font-size: 10px;
+    position: absolute;
+    right: -6px;
+    top: 16px;
+}
 }
 
 @media screen and (max-width: 992px) {
-
   /* header */
+  header .navbar-brand{
+    flex-grow: 1;
+  }
+  header .mode{
+    order: 0;
+    flex-grow: 0;
+    padding-right: 20px;
+  }
   header {
     height: auto;
   }
@@ -906,7 +1147,8 @@ footer a:hover {
   header .navbar .navbar-toggler {
     border: 1px solid #dc4f72;
     background: #dc4f72;
-    padding: 4px 6px;
+    padding: 4px 6px; 
+    flex-grow: 0;
   }
 
   header .navbar .navbar-toggler:focus {
@@ -925,6 +1167,12 @@ footer a:hover {
     width: 100%;
   }
 
+  .dark header .navbar-collapse {
+    background-color: #131617;
+    border: 1px solid #333;
+    width: 100%;
+  }
+
   .navbar a.nav-link::before,
   .navbar a.dropdown-item::before {
     display: none;
@@ -932,6 +1180,7 @@ footer a:hover {
 
   .navbar .navbar-nav .nav-item .dropdown_icon i {
     top: 15px;
+    right: 15px;
   }
 
   .navbar .btn {
@@ -987,7 +1236,7 @@ footer a:hover {
   }
 
   /* footer */
-  footer .container>div {
+  footer .container > div {
     flex-direction: column;
   }
 

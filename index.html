@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Masterwork</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
+<body id="myBody">
   <header class="header fixed-top">
     <nav class="navbar navbar-expand-lg" style="padding: 19px 0;">
       <div class="container">
@@ -35,22 +35,28 @@
             <span>Masterwork </span>
           </h1>
         </a>
+        <div class="search mode">
+          <button id="switchButton" title="Click to switch theme" style="font-size: 22px; font-style: italic;">
+            <i class="far fa-moon" style="color: black;"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item px-md-3 position-relative">
+            <li class="nav-item px-lg-3 position-relative">
               <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
-            <li class="nav-item px-md-3 position-relative">
+            <li class="nav-item px-lg-3 position-relative">
               <a class="nav-link" href="./About-page/about.html">About</a>
             </li>
-            <li class="nav-item px-md-3 position-relative">
+            <li class="nav-item px-lg-3 position-relative">
               <a class="nav-link" href="./Services-page/service.html">Services</a>
             </li>
-            <li class="nav-item px-md-3 position-relative dropdown">
+            <li class="nav-item px-lg-3 position-relative dropdown">
               <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pages
                 <span class="dropdown_icon"><i class="fa-solid fa-chevron-down"></i></span>
@@ -67,7 +73,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item px-md-3 position-relative">
+            <li class="nav-item px-lg-3 position-relative">
               <a class="nav-link" href="./Contact/Contact.html">Contact</a>
             </li>
           </ul>
@@ -80,17 +86,19 @@
               <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
             </div>
           </div>
-          <div class="search me-md-3">
+          <div class="search me-lg-3 pb-3 pb-lg-0">
             <button class="openBtn" onclick="openSearch() ">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
-          <div class="schedule me-md-3">
+          <div class="schedule me-lg-3">
             <a class="btn btn-outline-primary" href="#"> Schedule a Demo </a>
           </div>
         </div>
+        
       </div>
     </nav>
+    
   </header>
   <section class="banner">
     <div class="banner_bg">
@@ -523,7 +531,7 @@
     </div>
   </section>
   <footer>
-    <div class="bg-light py-5">
+    <div class=" bg-light py-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <div class="footer_item px-lg-3 pb-4 pb-lg-0 ">
@@ -570,18 +578,18 @@
           </div>
           <div class=" pe-lg-3  ps-lg-5">
             <h3>Newsletter</h3>
-            <div class=" shadow-lg bg-white p-4 rounded-2">
+            <div class=" footer_form shadow-lg bg-white p-4 rounded-2">
               <h4>Get latest updates and offers.</h4>
               <form action="" class="d-flex mb-3 justify-content-between" method="post">
                 <input type="email" name="email" placeholder="Email Address" required=""
-                  class="bg-light border-0 rounded-2">
+                  class=" footer_email bg-light border-0 rounded-2">
                 <button type="submit" class="text-center border-0 text-light rounded-2">Go</button>
               </form>
               <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
             </div>
           </div>
         </div>
-        <div class=" d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center">
+        <div class=" footer_right d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center">
           <div>
             <p>© 2023 Masterwork. All Rights Reserved | WordPress Theme by <a href="#" class="text-dark">W3Layouts.</a>
             </p>
@@ -644,6 +652,11 @@
         $(".navbar").removeClass("active");
       }
     });
+  </script>
+  <!-- mode -->
+  <script>
+    document.getElementById("switchButton").onclick = function () { document.getElementById("myBody").classList.toggle("dark");
+    };
   </script>
 </body>
 

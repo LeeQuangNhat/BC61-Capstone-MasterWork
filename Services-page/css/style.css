@@ -244,18 +244,17 @@ header .navbar.active {
 }
 
 /* breadcrumb  */
-.breadcrumb_home {
-    background-color: #F8F9FA;
+.breadcrumb_home{
+    padding: 15px 20px;
     margin-top: 90px;
 }
-
-.breadcrumb_home nav a {
+.breadcrumb_home a{
     color: #DC4F72;
     text-decoration: none;
     transition: all 0.3s;
+    font-size: 14px;
 }
-
-.breadcrumb_home nav a:hover {
+.breadcrumb_home a:hover{
     text-decoration: underline;
 }
 
@@ -523,6 +522,34 @@ footer a:hover {
     color: #dc4f72 !important;
     transition: 0.5s ease;
 }
+
+/* back to top */
+.back_to_top {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #f55f8d;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .back_to_top i {
+    color: white;
+  }
+  
+  /* style of button back to top  */
+  .cd-top--is-visible {
+    visibility: visible;
+    opacity: 0.8;
+  }
+  
+  .cd-top--is-visible:hover {
+    opacity: 1;
+  }
 
 
 /* responsive */
