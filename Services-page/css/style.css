@@ -913,7 +913,7 @@ footer a:hover {
   }
 
   /* products */
-  .products .bg img {
+  .products .bg  {
     padding-top: 30px;
   }
 
@@ -1005,6 +1005,10 @@ footer a:hover {
   .products .bg img {
     width: 300px;
     margin: 20px auto 40px;
+  }
+
+  .products .bg  {
+    padding-top: 0px;
   }
 
   /* footer */
