@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Page</title>
 
-   <!-- CSS Magic Effects -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magic-effects@1.1.1/dist/magic-effects.min.css">
+  <!-- CSS Magic Effects -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magic-effects@1.1.1/dist/magic-effects.min.css">
 
 
   <!-- Required meta tags -->
@@ -25,10 +25,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 
-    <!-- Thư viện Magnific Popup CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+  <!-- Thư viện Magnific Popup CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
 
   <!-- gg-font -->
@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="../About-page/css/style.css">
 </head>
 
-<body>
+<body id="myBody">
 
   <header class="header fixed-top">
     <nav class="navbar navbar-expand-lg" style="padding: 19px 0;">
@@ -53,22 +53,28 @@
             <span>Masterwork </span>
           </h1>
         </a>
+        <div class="search mode">
+          <button id="switchButton" title="Click to switch theme" style="font-size: 22px; font-style: italic;">
+            <i class="far fa-moon" style="color: black;"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item px-md-3 position-relative">
+            <li class="nav-item px-lg-3 position-relative">
               <a class="nav-link " aria-current="page" href="../index.html">Home</a>
             </li>
-            <li class="nav-item px-md-3 position-relative">
+            <li class="nav-item px-lg-3 position-relative">
               <a class="nav-link active" href="../About-page/about.html">About</a>
             </li>
-            <li class="nav-item px-md-3 position-relative">
+            <li class="nav-item px-lg-3 position-relative">
               <a class="nav-link" href="../Services-page/service.html">Services</a>
             </li>
-            <li class="nav-item px-md-3 position-relative dropdown">
+            <li class="nav-item px-lg-3 position-relative dropdown">
               <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pages
                 <span class="dropdown_icon"><i class="fa-solid fa-chevron-down"></i></span>
@@ -85,7 +91,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item px-md-3 position-relative">
+            <li class="nav-item px-lg-3 position-relative">
               <a class="nav-link" href="../Contact/Contact.html">Contact</a>
             </li>
           </ul>
@@ -98,12 +104,12 @@
               <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
             </div>
           </div>
-          <div class="search me-md-3">
+          <div class="search me-lg-3 pb-3 pb-lg-0">
             <button class="openBtn" onclick="openSearch() ">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
-          <div class="schedule me-md-3">
+          <div class="schedule me-lg-3">
             <a class="btn btn-outline-primary" href="#"> Schedule a Demo </a>
           </div>
         </div>
@@ -176,8 +182,8 @@
             Our History 1795
           </h4>
           <p style="color: #5a5a5a; line-height: 25px" class="mb-0">
-            Lorem ipsum dolor sit amet, consectetur 
-            adipisicingelit, sed do eiusmod tempor incididunt 
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicingelit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud.
           </p>
@@ -187,8 +193,8 @@
             The power of business
           </h4>
           <p style="color: #5a5a5a; line-height: 25px" class="mb-0">
-            Lorem ipsum dolor sit amet, consectetur 
-            adipisicingelit, sed do eiusmod tempor incididunt 
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicingelit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud.
           </p>
@@ -198,8 +204,8 @@
             120 Customer service
           </h4>
           <p style="color: #5a5a5a; line-height: 25px" class="mb-0">
-            Lorem ipsum dolor sit amet, consectetur 
-            adipisicingelit, sed do eiusmod tempor incididunt 
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicingelit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud.
           </p>
@@ -309,7 +315,7 @@
             <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
               Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam. </p>
           </div>
-          
+
           <div class="info mt-5">
             <div class="position-relative">
               <a href="https://www.youtube.com/embed/a5KYlHNKQB8?si=L9oRPy0fgHhJzaiO" class="popup-with-zoom-anim">
@@ -320,44 +326,42 @@
               </a>
             </div>
           </div>
-          
+
           <div class="mt-5 request-quote">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
-            data-bs-target="#exampleModalCenter" data-bs-whatever="@getbootstrap">REQUEST A QUOTEE</button>
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"
+              data-bs-whatever="@getbootstrap">REQUEST A QUOTEE</button>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content AboutPageQuotePopup">
                   <div class="modal-header px-4">
                     <h5 class="modal-title request-demo-title" id="exampleModalCenterTitle">
                       Get Free Quote</h5>
-                      <button type="button" class="close btn-secondary" data-bs-dismiss="modal">x</button>
+                    <button type="button" class="close btn-secondary" data-bs-dismiss="modal">x</button>
 
-                     </div>
+                  </div>
                   <div class="modal-body demo-request p-4">
                     <form action="/" method="GET">
                       <div class="form-group">
                         <!-- <label for="NameInput">Name:</label> -->
-                        <input type="text" class="form-control" name="name" 
-                        placeholder="Name" required>
+                        <input type="text" class="form-control" name="name" placeholder="Name" required>
                       </div>
                       <div class="form-group">
                         <!-- <label for="exampleInputEmail1">Email address:</label> -->
-                        <input type="email" class="form-control" name="emailid" 
-                        placeholder="Email" required>
+                        <input type="email" class="form-control" name="emailid" placeholder="Email" required>
                       </div>
                       <div class="form-group">
                         <!-- <label for="CompanyInput">Company:</label> -->
-                        <input type="text" class="form-control" name="company" 
-                        placeholder="Company" required>
+                        <input type="text" class="form-control" name="company" placeholder="Company" required>
                       </div>
                       <div class="form-group">
                         <!-- <label for="CompanyInput">Designation:</label> -->
-                        <input type="text" class="form-control" name="subject" 
-                        placeholder="Subject" required>
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                       </div>
                       <div class="text-right">
-                        <button type="submit" class="btn btn-primary theme-button" data-toggle="modal" data-target="#exampleModal">
-                        SUBMIT NOW</button>
+                        <button type="submit" class="btn btn-primary theme-button" data-toggle="modal"
+                          data-target="#exampleModal">
+                          SUBMIT NOW</button>
                       </div>
                     </form>
                   </div>
@@ -365,13 +369,13 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
   </section>
-  
-  
+
+
 
   <section class="carousel p-5">
     <div class="container ">
@@ -410,210 +414,210 @@
   <section class="team_members">
     <div class="container ">
       <div class="all_team py-5">
-      <div class="title text-center ">
-        <h6>Our Team Members</h6>
-        <h3>Our Creative Team</h3>
-        <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-          Nulla mollis<br> dapibus nunc, ut rhoncus
-          turpis sodales quis. Integer sit amet mattis quam.</p>
-      </div>
-      <div class="team row p-5">
+        <div class="title text-center ">
+          <h6>Our Team Members</h6>
+          <h3>Our Creative Team</h3>
+          <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Nulla mollis<br> dapibus nunc, ut rhoncus
+            turpis sodales quis. Integer sit amet mattis quam.</p>
+        </div>
+        <div class="team row p-5">
 
-        <div class="col-lg-3 col-sm-6 team_item">
-          <div class="team-info">
-            <div class="bg position-relative  ">
-          <a href="#">
-           <img src="../img/team1.jpg" alt="">
-          </a>
-            </div>
-            <div class="info">
-              <h3>Gwen Johnson </h3>
-              <p>Founder & CEO</p>
-                <div class="icon">
-                <a href="https://www.facebook.com/w3layouts/"class="facebook">
-                     <i class="fa-brands fa-facebook-f"></i>
+          <div class="col-lg-3 col-sm-6 team_item">
+            <div class="team-info">
+              <div class="bg position-relative  ">
+                <a href="#">
+                  <img src="../img/team1.jpg" alt="">
                 </a>
-                    
-                <a href="https://twitter.com/W3layouts"class="twitter">
-                  <i class="fa-brands fa-twitter"></i>
-                 </a>
-                    
+              </div>
+              <div class="info">
+                <h3>Gwen Johnson </h3>
+                <p>Founder & CEO</p>
+                <div class="icon">
+                  <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="https://twitter.com/W3layouts" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+
                 </div>
+              </div>
             </div>
           </div>
-        </div>
-    
-        
-        <div class="col-lg-3 col-sm-6 team_item ">
-          <div class="team-info">
-            <div class="bg position-relative ">
-            <a href="#">
-              <img src="../img/team2.jpg" alt="">
-            </a>
-            </div>
-            <div class="info">
-              <h3>Daniel Roberto</h3>
-              <p>Regional Manager</p>
-              
-                <div class="icon">
-             <a href="https://www.facebook.com/w3layouts/"class="facebook">
-                     <i class="fa-brands fa-facebook-f"></i>
-              </a>
-                    
-            <a href="https://twitter.com/W3layouts"class="twitter">
-                  <i class="fa-brands fa-twitter"></i>
-           </a>
-          </div>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-lg-3 col-sm-6 team_item ">
-          <div class="team-info">
-            <div class="bg position-relative ">
-            <a href="#">
-              <img src="../img/team3.jpg" alt="">
-            </a>
-            </div>
-            <div class="info">
-              <h3>Daniel Roberto</h3>
-              <p>Regional Manager</p>
-              
-                <div class="icon">
-             <a href="https://www.facebook.com/w3layouts/"class="facebook">
-                     <i class="fa-brands fa-facebook-f"></i>
-              </a>
-                    
-            <a href="https://twitter.com/W3layouts"class="twitter">
-                  <i class="fa-brands fa-twitter"></i>
-           </a>
-          </div>
-            </div>
-          </div>
-        </div>
 
 
-        <div class="col-lg-3 col-sm-6 team_item">
-          <div class="team-info">
-            <div class="bg position-relative ">
-            <a href="#">
-              <img src="../img/team4.jpg" alt="">
-            </a>
-            </div>
-            <div class="info">
-              <h3>Daniel Roberto</h3>
-              <p>Regional Manager</p>
-              
-                <div class="icon">
-             <a href="https://www.facebook.com/w3layouts/"class="facebook">
-                     <i class="fa-brands fa-facebook-f"></i>
-              </a>
-                    
-            <a href="https://twitter.com/W3layouts"class="twitter">
-                  <i class="fa-brands fa-twitter"></i>
-           </a>
-          </div>
-            </div>
-          </div>
-        </div>
+          <div class="col-lg-3 col-sm-6 team_item ">
+            <div class="team-info">
+              <div class="bg position-relative ">
+                <a href="#">
+                  <img src="../img/team2.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <h3>Daniel Roberto</h3>
+                <p>Regional Manager</p>
 
-        <div class="col-lg-3 col-sm-6 team_item  ">
-          <div class="team-info">
-            <div class="bg position-relative ">
-            <a href="#">
-              <img src="../img/team5.jpg" alt="">
-            </a>
-            </div>
-            <div class="info">
-              <h3>Daniel Roberto</h3>
-              <p>Regional Manager</p>
-              
                 <div class="icon">
-             <a href="https://www.facebook.com/w3layouts/"class="facebook">
-                     <i class="fa-brands fa-facebook-f"></i>
-              </a>
-                    
-            <a href="https://twitter.com/W3layouts"class="twitter">
-                  <i class="fa-brands fa-twitter"></i>
-           </a>
-          </div>
-            </div>
-          </div>
-        </div>
+                  <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
 
-        <div class="col-lg-3 col-sm-6 team_item  ">
-          <div class="team-info">
-            <div class="bg position-relative ">
-            <a href="#">
-              <img src="../img/team6.jpg" alt="">
-            </a>
-            </div>
-            <div class="info">
-              <h3>Daniel Roberto</h3>
-              <p>Regional Manager</p>
-              
-                <div class="icon">
-             <a href="https://www.facebook.com/w3layouts/"class="facebook">
-                     <i class="fa-brands fa-facebook-f"></i>
-              </a>
-                    
-            <a href="https://twitter.com/W3layouts"class="twitter">
-                  <i class="fa-brands fa-twitter"></i>
-           </a>
-          </div>
+                  <a href="https://twitter.com/W3layouts" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 team_item ">
-          <div class="team-info">
-            <div class="bg position-relative ">
-            <a href="#">
-              <img src="../img/team7.jpg" alt="">
-            </a>
-            </div>
-            <div class="info">
-              <h3>Daniel Roberto</h3>
-              <p>Regional Manager</p>
-              
-                <div class="icon">
-             <a href="https://www.facebook.com/w3layouts/"class="facebook">
-                     <i class="fa-brands fa-facebook-f"></i>
-              </a>
-                    
-            <a href="https://twitter.com/W3layouts"class="twitter">
-                  <i class="fa-brands fa-twitter"></i>
-           </a>
-          </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-3 col-sm-6 team_item ">
-          <div class="team-info">
-            <div class="bg position-relative ">
-            <a href="#">
-              <img src="../img/team8.jpg" alt="">
-            </a>
-            </div>
-            <div class="info">
-              <h3>Daniel Roberto</h3>
-              <p>Regional Manager</p>
-              
+          <div class="col-lg-3 col-sm-6 team_item ">
+            <div class="team-info">
+              <div class="bg position-relative ">
+                <a href="#">
+                  <img src="../img/team3.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <h3>Daniel Roberto</h3>
+                <p>Regional Manager</p>
+
                 <div class="icon">
-             <a href="https://www.facebook.com/w3layouts/"class="facebook">
-                     <i class="fa-brands fa-facebook-f"></i>
-              </a>
-                    
-            <a href="https://twitter.com/W3layouts"class="twitter">
-                  <i class="fa-brands fa-twitter"></i>
-           </a>
+                  <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="https://twitter.com/W3layouts" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+
+
+          <div class="col-lg-3 col-sm-6 team_item">
+            <div class="team-info">
+              <div class="bg position-relative ">
+                <a href="#">
+                  <img src="../img/team4.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <h3>Daniel Roberto</h3>
+                <p>Regional Manager</p>
+
+                <div class="icon">
+                  <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="https://twitter.com/W3layouts" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 team_item  ">
+            <div class="team-info">
+              <div class="bg position-relative ">
+                <a href="#">
+                  <img src="../img/team5.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <h3>Daniel Roberto</h3>
+                <p>Regional Manager</p>
+
+                <div class="icon">
+                  <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="https://twitter.com/W3layouts" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 team_item  ">
+            <div class="team-info">
+              <div class="bg position-relative ">
+                <a href="#">
+                  <img src="../img/team6.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <h3>Daniel Roberto</h3>
+                <p>Regional Manager</p>
+
+                <div class="icon">
+                  <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="https://twitter.com/W3layouts" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 team_item ">
+            <div class="team-info">
+              <div class="bg position-relative ">
+                <a href="#">
+                  <img src="../img/team7.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <h3>Daniel Roberto</h3>
+                <p>Regional Manager</p>
+
+                <div class="icon">
+                  <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="https://twitter.com/W3layouts" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 team_item ">
+            <div class="team-info">
+              <div class="bg position-relative ">
+                <a href="#">
+                  <img src="../img/team8.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <h3>Daniel Roberto</h3>
+                <p>Regional Manager</p>
+
+                <div class="icon">
+                  <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="https://twitter.com/W3layouts" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-</section>
+  </section>
 
   <section class="community py-5">
     <div class="container">
@@ -634,7 +638,7 @@
   </section>
 
   <footer>
-    <div class="bg-light py-5">
+    <div class=" bg-light py-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <div class="footer_item px-lg-3 pb-4 pb-lg-0 ">
@@ -681,18 +685,18 @@
           </div>
           <div class=" pe-lg-3  ps-lg-5">
             <h3>Newsletter</h3>
-            <div class=" shadow-lg bg-white p-4 rounded-2">
+            <div class=" footer_form shadow-lg bg-white p-4 rounded-2">
               <h4>Get latest updates and offers.</h4>
               <form action="" class="d-flex mb-3 justify-content-between" method="post">
                 <input type="email" name="email" placeholder="Email Address" required=""
-                  class="bg-light border-0 rounded-2">
+                  class=" footer_email bg-light border-0 rounded-2">
                 <button type="submit" class="text-center border-0 text-light rounded-2">Go</button>
               </form>
               <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
             </div>
           </div>
         </div>
-        <div class=" d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center">
+        <div class=" footer_right d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center">
           <div>
             <p>© 2023 Masterwork. All Rights Reserved | WordPress Theme by <a href="#" class="text-dark">W3Layouts.</a>
             </p>
@@ -788,39 +792,44 @@
       });
     });
   </script>
- 
- <!-- Thư viện Magnific Popup JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+  <!-- Thư viện Magnific Popup JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
 
 
-<script>
-  // Initialize Magnific Popup
-  $(document).ready(function() {
-    $('.popup-with-zoom-anim').magnificPopup({
-      type: 'iframe',
-      iframe: {
-        patterns: {
-          youtube: {
-            index: 'youtube.com/',
-            id: 'v=',
-            src: 'https://www.youtube.com/embed/a5KYlHNKQB8?si=L9oRPy0fgHhJzaiO'
+  <script>
+    // Initialize Magnific Popup
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'iframe',
+        iframe: {
+          patterns: {
+            youtube: {
+              index: 'youtube.com/',
+              id: 'v=',
+              src: 'https://www.youtube.com/embed/a5KYlHNKQB8?si=L9oRPy0fgHhJzaiO'
+            }
           }
         }
-      }
+      });
     });
-  });
-</script>
+  </script>
 
- <!-- <script>
+  <!-- <script>
   function openModal() {
     $('#exampleModalCenter').modal('show');
   }
 </script>
  -->
-
+<!-- mode -->
+<script>
+  document.getElementById("switchButton").onclick = function () { document.getElementById("myBody").classList.toggle("dark");
+  };
+</script>
 </body>
+
 </html>

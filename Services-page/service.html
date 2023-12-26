@@ -1,450 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services Page</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <!-- FontAwesome 6.2.0 CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
+    <!-- gg-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--Owl Carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../Services-page/css/style.css" />
+  </head>
 
-
-
-
-  <!-- gg-font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet">
-
-  <!-- main css -->
-  <link rel="stylesheet" href="../Services-page/css/style.css">
-</head>
-
-<body>
-  <header class="header fixed-top">
-    <nav class="navbar navbar-expand-lg" style="padding: 19px 0;">
-      <div class="container">
-        <a class="navbar-brand me-0" href="#">
-          <h1 class="mb-0">
-            <i class="fa-regular fa-handshake"></i>
-            <span>Masterwork </span>
-          </h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item px-md-3 position-relative">
-              <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item px-md-3 position-relative">
-              <a class="nav-link" href="../About-page/about.html">About</a>
-            </li>
-            <li class="nav-item px-md-3 position-relative">
-              <a class="nav-link active" href="../Services-page/service.html">Services</a>
-            </li>
-            <li class="nav-item px-md-3 position-relative dropdown">
-              <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Pages
-                <span class="dropdown_icon"><i class="fa-solid fa-chevron-down"></i></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item position-relative" href="#">Blog Posts</a>
-                </li>
-                <li>
-                  <a class="dropdown-item position-relative" href="../Landing-page/landingpage.html" >Landing page</a>
-                </li>
-                <li>
-                  <a class="dropdown-item position-relative" href="../404-page/404page.html">404 page</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item px-md-3 position-relative">
-              <a class="nav-link" href="../Contact/Contact.html">Contact</a>
-            </li>
-          </ul>
-          <div id="myOverlay" class="overlay">
-            <div class="overlay-content">
-              <form action="#" class="d-flex position-relative">
-                <input type="text" placeholder="Enter Keyword" name="search" />
-                <button type="submit">Search</button>
-              </form>
-              <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-            </div>
-          </div>
-          <div class="search me-md-3">
-            <button class="openBtn" onclick="openSearch() ">
-              <i class="fa-solid fa-magnifying-glass"></i>
+  <body id="myBody">
+    <header class="header fixed-top">
+      <nav class="navbar navbar-expand-lg" style="padding: 19px 0">
+        <div class="container">
+          <a class="navbar-brand me-0" href="#">
+            <h1 class="mb-0">
+              <i class="fa-regular fa-handshake"></i>
+              <span>Masterwork </span>
+            </h1>
+          </a>
+          <div class="search mode">
+            <button
+              id="switchButton"
+              title="Click to switch theme"
+              style="font-size: 22px; font-style: italic"
+            >
+              <i class="far fa-moon" style="color: black"></i>
+              <i class="far fa-sun"></i>
             </button>
           </div>
-          <div class="schedule me-md-3">
-            <a class="btn btn-outline-primary" href="#"> Schedule a Demo </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-lg-3 position-relative">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-lg-3 position-relative">
+                <a class="nav-link" href="../About-page/about.html">About</a>
+              </li>
+              <li class="nav-item px-lg-3 position-relative">
+                <a class="nav-link active" href="../Services-page/service.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item px-lg-3 position-relative dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                  <span class="dropdown_icon"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item position-relative" href="#"
+                      >Blog Posts</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item position-relative"
+                      href="../Landing-page/landingpage.html"
+                      >Landing page</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item position-relative"
+                      href="../404-page/404page.html"
+                      >404 page</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item px-lg-3 position-relative">
+                <a class="nav-link" href="../Contact/Contact.html">Contact</a>
+              </li>
+            </ul>
+            <div id="myOverlay" class="overlay">
+              <div class="overlay-content">
+                <form action="#" class="d-flex position-relative">
+                  <input
+                    type="text"
+                    placeholder="Enter Keyword"
+                    name="search"
+                  />
+                  <button type="submit">Search</button>
+                </form>
+                <span
+                  class="closebtn"
+                  onclick="closeSearch()"
+                  title="Close Overlay"
+                  >×</span
+                >
+              </div>
+            </div>
+            <div class="search me-lg-3 pb-3 pb-lg-0">
+              <button class="openBtn" onclick="openSearch() ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="schedule me-lg-3">
+              <a class="btn btn-outline-primary" href="#"> Schedule a Demo </a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+    <section class="breadcrumb_home bg-light">
+      <div class="container" style="font-size: 14px">
+        <a href="../index.html" rel="nofollow">Home</a>
+        &nbsp;&nbsp;»&nbsp;&nbsp;Services page
       </div>
-    </nav>
-  </header>
-  <section class="breadcrumb_home bg-light">
-    <div class="container" style="font-size: 14px;">
-      <a href="../index.html" rel="nofollow">Home</a>
-      &nbsp;&nbsp;»&nbsp;&nbsp;Services page
-    </div>
-  </section>
+    </section>
 
-  <section class="services py-5">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="services_content row pt-4">
-        <div class="content_left px-4 col-lg-6">
-          <h3>Our Best Services</h3>
-          <h4 class="mt-lg-3 mt-2" style="line-height: 30px; font-size: 24px; color: #999;">
-            Fusce fringilla tincidunt laoreet volutpat cras varius sit. metus
-            vitae diam mauris.
-          </h4>
-          <p class="mt-sm-4 mt-3 mb-sm-0 mb-2" style="color: #5a5a5a;">
-            Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce
-            fringilla tincidunt laoreet Morbi ac metus vitae diam scelerisque
-            malesuada eget eu mauris. Cras varius lorem ac velit pharetra, non
-            scelerisque mi vulputate. Phasellus bibendum.
-          </p>
-          <button type="button" class="btn">LEARN MORE</button>
-        </div>
-        <div class="col-lg-6">
-          <div class="content_right row px-4">
-            <div class="item col-6 px-4">
-              <div class="icon">
-                <a href="#"><img src="../img/service-icon1.png" alt="" /></a>
-              </div>
-              <h5 class="fw-bold">Concept & Strategy</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!
-              </p>
-            </div>
-            <div class="item col-6 px-4">
-              <div class="icon">
-                <a href="#"><img src="../img/service-icon2.png" alt="" /></a>
-              </div>
-              <h5 class="fw-bold">Interactive Business</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!
-              </p>
-            </div>
-            <div class="item col-6 px-4">
-              <div class="icon">
-                <a href="#"><img src="../img/service-icon3.png" alt="" /></a>
-              </div>
-              <h5 class="fw-bold">Financial Institution</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!
-              </p>
-            </div>
-            <div class="item col-6 px-4">
-              <div class="icon">
-                <a href="#"><img src="../img/service-icon4.png" alt="" /></a>
-              </div>
-              <h5 class="fw-bold">Worldwide Access</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="products bg-light py-5">
-    <div class="container py-lg-3">
-      <div class="best_products">
-        <div class="text_all text-center mb-5">
-          <h6> THE BEST PRODUCTS</h6>
-          <h3>How we make your strategy business</h3>
-          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-            Nulla mollis<br>dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
-          </p>
-        </div>
-        <div class="content row mx-lg-0 h-100">
-          <div class="content_item col-lg-4">
-            <div class="item row">
-              <div class="number col-2">
-                <span>1</span>
-              </div>
-              <div class="document col-10">
-                <h4>FULL SECURITY</h4>
-                <p style="color: #5a5a5a;  line-height: 21px;">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam
-                  sequi optio consectetur adipisicing eli</p>
-              </div>
-            </div>
-            <div class="item row my-4">
-              <div class="number col-2">
-                <span>2</span>
-              </div>
-              <div class="document col-10">
-                <h4>BEST PERFORMANCE</h4>
-                <p style="color: #5a5a5a;  line-height: 21px;">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam
-                  sequi optio consectetur adipisicing eli</p>
-              </div>
-            </div>
-            <div class="item row">
-              <div class="number col-2">
-                <span>3</span>
-              </div>
-              <div class="document col-10">
-                <h4>CONCEPT & STRATEGY</h4>
-                <p style="color: #5a5a5a;  line-height: 21px;">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam
-                  sequi optio consectetur adipisicing eli</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg  col-lg-4 text-center">
-            <img src="../img/service-circle.jpg" alt="">
-          </div>
-          <div class="content_item col-lg-4">
-            <div class="item row">
-              <div class="number col-2">
-                <span>4</span>
-              </div>
-              <div class="document col-10">
-                <h4>WORLDWIDE ACCESS</h4>
-                <p style="color: #5a5a5a;  line-height: 21px;">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam
-                  sequi optio consectetur adipisicing eli</p>
-              </div>
-            </div>
-            <div class="item row my-4">
-              <div class="number col-2">
-                <span>5</span>
-              </div>
-              <div class="document col-10">
-                <h4>INTERACTIVE BUSINESS</h4>
-                <p style="color: #5a5a5a;  line-height: 21px;">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam
-                  sequi optio consectetur adipisicing eli</p>
-              </div>
-            </div>
-            <div class="item row">
-              <div class="number col-2">
-                <span>6</span>
-              </div>
-              <div class="document col-10">
-                <h4>EMAILING</h4>
-                <p style="color: #5a5a5a;  line-height: 21px;">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam
-                  sequi optio consectetur adipisicing eli</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="features_services p-5">
-    <div class="container">
-      <div class="more_features">
-        <div class="title text-center">
-          <h6>FEATURED SERVICES</h6>
-          <h2>Some More Features</h2>
-          <p>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-            Nulla mollis <br>dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
-          </p>
-        </div>
-
-        <div class="row content">
-
-          <div class="col-lg-6">
-            <div class="content-left">
-              <div class="title-content text-left">
-                <h3 class="service-title">Connect people and ideas</h3>
-              </div>
-              <p>Lorem ipsum dolor sit amet adipisicing elit. Consequuntur odio
-                voluptatem tenetur consequatur adipisicing elit.</p>
-              <ul class="feature-list my-4 ps-0">
-                <li><i class="fa fa-check"></i>
-                  <span>Website Designing and Development</span>
-                </li>
-                <li><i class="fa fa-check"></i>
-                  <span>Android and iOs Apps Development </span>
-                </li>
-                <li><i class="fa fa-check"></i>
-                  <span>Successfully Providing Business Solution from 20 years</span>
-                </li>
-                <li><i class="fa fa-check"></i>
-                  <span>Excellence Records </span>
-                </li>
-              </ul>
-              <button type="button" class="btn">KNOW MORE</button>
-              <img src="../img/b2.jpg" alt="" />
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-lg-0 mt-5">
-            <div class="content-right">
-              <img src="../img/b1.jpg" alt="" />
-              <div class="title-content text-left mt-5">
-                <h3 class="service-title">Work better together</h3>
-              </div>
-
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem
-                tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
-                voluptatem tenetur consequatur adipisicing elit.</p>
-
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem
-                tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
-                voluptatem tenetur consequatur adipisicing elit.</p>
-
-              <button type="button" class="btn">KNOW MORE</button>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <footer>
-    <div class="bg-light py-5">
+    <section class="services py-5">
       <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="footer_item px-lg-3 pb-4 pb-lg-0 ">
-            <h3>Meta</h3>
-            <ul class="ps-0">
-              <li class="my-2">
-                <a href="#">Log In</a>
-              </li>
-              <li class="my-2">
-                <a href="#">Entries Feed</a>
-              </li>
-              <li class="my-2">
-                <a href="#">Comments Feed</a>
-              </li>
-              <li class="my-2">
-                <a href="#">WordPress.Org</a>
-              </li>
-            </ul>
+        <h2>Our Services</h2>
+        <div class="services_content row pt-4">
+          <div class="content_left px-4 col-lg-6">
+            <h3>Our Best Services</h3>
+            <h4
+              class="mt-lg-3 mt-2"
+              style="line-height: 30px; font-size: 24px; color: #999"
+            >
+              Fusce fringilla tincidunt laoreet volutpat cras varius sit. metus
+              vitae diam mauris.
+            </h4>
+            <p class="mt-sm-4 mt-3 mb-sm-0 mb-2" style="color: #5a5a5a">
+              Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce
+              fringilla tincidunt laoreet Morbi ac metus vitae diam scelerisque
+              malesuada eget eu mauris. Cras varius lorem ac velit pharetra, non
+              scelerisque mi vulputate. Phasellus bibendum.
+            </p>
+            <button type="button" class="btn">LEARN MORE</button>
           </div>
-          <div class="footer_item px-lg-3 pb-4 pb-lg-0">
-            <h3>Categories</h3>
-            <ul class="ps-0">
-              <li class="my-2">
-                <a href="#">Business</a>
-              </li>
-              <li class="my-2">
-                <a href="#">Design</a>
-              </li>
-              <li class="my-2">
-                <a href="#">Industry</a>
-              </li>
-              <li class="my-2">
-                <a href="#">Programming</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer_item px-lg-3 pb-4 pb-lg-0">
-            <h3>Archives</h3>
-            <ul class="ps-0">
-              <li class="my-2">
-                <a href="#">March 2021</a>
-              </li>
-            </ul>
-          </div>
-          <div class=" pe-lg-3  ps-lg-5">
-            <h3>Newsletter</h3>
-            <div class=" shadow-lg bg-white p-4 rounded-2">
-              <h4>Get latest updates and offers.</h4>
-              <form action="" class="d-flex mb-3 justify-content-between" method="post">
-                <input type="email" name="email" placeholder="Email Address" required=""
-                  class="bg-light border-0 rounded-2">
-                <button type="submit" class="text-center border-0 text-light rounded-2">Go</button>
-              </form>
-              <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+          <div class="col-lg-6">
+            <div class="content_right row px-4">
+              <div class="item col-6 px-4">
+                <div class="icon">
+                  <a href="#"><img src="../img/service-icon1.png" alt="" /></a>
+                </div>
+                <h5 class="fw-bold">Concept & Strategy</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!
+                </p>
+              </div>
+              <div class="item col-6 px-4">
+                <div class="icon">
+                  <a href="#"><img src="../img/service-icon2.png" alt="" /></a>
+                </div>
+                <h5 class="fw-bold">Interactive Business</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!
+                </p>
+              </div>
+              <div class="item col-6 px-4">
+                <div class="icon">
+                  <a href="#"><img src="../img/service-icon3.png" alt="" /></a>
+                </div>
+                <h5 class="fw-bold">Financial Institution</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!
+                </p>
+              </div>
+              <div class="item col-6 px-4">
+                <div class="icon">
+                  <a href="#"><img src="../img/service-icon4.png" alt="" /></a>
+                </div>
+                <h5 class="fw-bold">Worldwide Access</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class=" d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center">
-          <div>
-            <p>© 2023 Masterwork. All Rights Reserved | WordPress Theme by <a href="#" class="text-dark">W3Layouts.</a>
+      </div>
+    </section>
+
+    <section class="products bg-light py-5">
+      <div class="container py-lg-3">
+        <div class="best_products">
+          <div class="text_all text-center mb-5">
+            <h6>THE BEST PRODUCTS</h6>
+            <h3>How we make your strategy business</h3>
+            <p>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis<br />dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
             </p>
           </div>
-          <div class="footer_icon">
-            <ul class="ps-0 ps-lg-4">
-              <li class="d-inline-block me-1">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li class="d-inline-block me-1">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </li>
-              <li class="d-inline-block me-1">
-                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-              </li>
-              <li class="d-inline-block me-1">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-              </li>
-            </ul>
+          <div class="content row mx-lg-0 h-100">
+            <div class="content_item col-lg-4">
+              <div class="item row">
+                <div class="number col-2">
+                  <span>1</span>
+                </div>
+                <div class="document col-10">
+                  <h4>FULL SECURITY</h4>
+                  <p style="color: #5a5a5a; line-height: 21px">
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing eli
+                  </p>
+                </div>
+              </div>
+              <div class="item row my-4">
+                <div class="number col-2">
+                  <span>2</span>
+                </div>
+                <div class="document col-10">
+                  <h4>BEST PERFORMANCE</h4>
+                  <p style="color: #5a5a5a; line-height: 21px">
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing eli
+                  </p>
+                </div>
+              </div>
+              <div class="item row">
+                <div class="number col-2">
+                  <span>3</span>
+                </div>
+                <div class="document col-10">
+                  <h4>CONCEPT & STRATEGY</h4>
+                  <p style="color: #5a5a5a; line-height: 21px">
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing eli
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg col-lg-4 text-center">
+              <img src="../img/service-circle.jpg" alt="" />
+            </div>
+            <div class="content_item col-lg-4">
+              <div class="item row">
+                <div class="number col-2">
+                  <span>4</span>
+                </div>
+                <div class="document col-10">
+                  <h4>WORLDWIDE ACCESS</h4>
+                  <p style="color: #5a5a5a; line-height: 21px">
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing eli
+                  </p>
+                </div>
+              </div>
+              <div class="item row my-4">
+                <div class="number col-2">
+                  <span>5</span>
+                </div>
+                <div class="document col-10">
+                  <h4>INTERACTIVE BUSINESS</h4>
+                  <p style="color: #5a5a5a; line-height: 21px">
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing eli
+                  </p>
+                </div>
+              </div>
+              <div class="item row">
+                <div class="number col-2">
+                  <span>6</span>
+                </div>
+                <div class="document col-10">
+                  <h4>EMAILING</h4>
+                  <p style="color: #5a5a5a; line-height: 21px">
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing eli
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- back to top  -->
-  <!-- all your content here -->
-  <a href="#" class="cd-top text-replace js-cd-top back_to_top"><i class="fa-solid fa-chevron-up"></i></a>
-  <!-- back to top js -->
-  <script src="../back-to-top-master/assets/js/main.js"></script>
-  <script src="../back-to-top-master/assets/js/util.js"></script>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
+    <section class="features_services p-5">
+      <div class="container">
+        <div class="more_features">
+          <div class="title text-center">
+            <h6>FEATURED SERVICES</h6>
+            <h2>Some More Features</h2>
+            <p>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis <br />dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+          </div>
 
-  <!-- count-up js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="../js/jquery.countup.js"></script>
-  <script>
-    $(".counter").countUp();
-  </script>
-  <!-- header -->
-  <script>
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 50) {
-        $(".header").addClass("active");
-        $(".navbar").addClass("active");
-      } else {
-        //remove the background property so it comes transparent again (defined in your css)
-        $(".header").removeClass("active");
-        $(".navbar").removeClass("active");
-      }
-    });
-  </script>
-</body>
+          <div class="row content">
+            <div class="col-lg-6">
+              <div class="content-left">
+                <div class="title-content text-left">
+                  <h3 class="service-title">Connect people and ideas</h3>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet adipisicing elit. Consequuntur odio
+                  voluptatem tenetur consequatur adipisicing elit.
+                </p>
+                <ul class="feature-list my-4 ps-0">
+                  <li>
+                    <i class="fa fa-check"></i>
+                    <span>Website Designing and Development</span>
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i>
+                    <span>Android and iOs Apps Development </span>
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i>
+                    <span
+                      >Successfully Providing Business Solution from 20
+                      years</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i>
+                    <span>Excellence Records </span>
+                  </li>
+                </ul>
+                <button type="button" class="btn">KNOW MORE</button>
+                <img src="../img/b2.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-lg-0 mt-5">
+              <div class="content-right">
+                <img src="../img/b1.jpg" alt="" />
+                <div class="title-content text-left mt-5">
+                  <h3 class="service-title">Work better together</h3>
+                </div>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur hic odio voluptatem tenetur consequatur.Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur hic odio voluptatem tenetur consequatur
+                  adipisicing elit.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur hic odio voluptatem tenetur consequatur.Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur hic odio voluptatem tenetur consequatur
+                  adipisicing elit.
+                </p>
+
+                <button type="button" class="btn">KNOW MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-light py-5">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Meta</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="#">Log In</a>
+                </li>
+                <li class="my-2">
+                  <a href="#">Entries Feed</a>
+                </li>
+                <li class="my-2">
+                  <a href="#">Comments Feed</a>
+                </li>
+                <li class="my-2">
+                  <a href="#">WordPress.Org</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Categories</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="#">Business</a>
+                </li>
+                <li class="my-2">
+                  <a href="#">Design</a>
+                </li>
+                <li class="my-2">
+                  <a href="#">Industry</a>
+                </li>
+                <li class="my-2">
+                  <a href="#">Programming</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Archives</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="#">March 2021</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pe-lg-3 ps-lg-5">
+              <h3>Newsletter</h3>
+              <div class="shadow-lg bg-white p-4 rounded-2">
+                <h4>Get latest updates and offers.</h4>
+                <form
+                  action=""
+                  class="d-flex mb-3 justify-content-between"
+                  method="post"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required=""
+                    class="bg-light border-0 rounded-2"
+                  />
+                  <button
+                    type="submit"
+                    class="text-center border-0 text-light rounded-2"
+                  >
+                    Go
+                  </button>
+                </form>
+                <p>
+                  Sign up for our latest news & articles. We won’t give you spam
+                  mails.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center"
+          >
+            <div>
+              <p>
+                © 2023 Masterwork. All Rights Reserved | WordPress Theme by
+                <a href="#" class="text-dark">W3Layouts.</a>
+              </p>
+            </div>
+            <div class="footer_icon">
+              <ul class="ps-0 ps-lg-4">
+                <li class="d-inline-block me-1">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="d-inline-block me-1">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="d-inline-block me-1">
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+                <li class="d-inline-block me-1">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- back to top  -->
+    <!-- all your content here -->
+    <a href="#" class="cd-top text-replace js-cd-top back_to_top"
+      ><i class="fa-solid fa-chevron-up"></i
+    ></a>
+    <!-- back to top js -->
+    <script src="../back-to-top-master/assets/js/main.js"></script>
+    <script src="../back-to-top-master/assets/js/util.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- count-up js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
+    <!-- header -->
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+          $(".header").addClass("active");
+          $(".navbar").addClass("active");
+        } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $(".header").removeClass("active");
+          $(".navbar").removeClass("active");
+        }
+      });
+    </script>
+    <!-- mode -->
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
+    </script>
+  </body>
 </html>
