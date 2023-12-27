@@ -104,7 +104,93 @@ a {
   color: white;
   opacity: 1;
 }
+/* Dark thêm-breadcrumd  */
+.dark .breadcrumb_home{
+  background-color: #191C1D !important;
+  color: #fff;
 
+}
+/* Dark theme features  */
+.dark .features{
+  background-color: #191C1D;
+}
+.dark .features_expert h3 {
+  color: #EEEEEE;
+}
+.dark .features_expert p{
+  color:#b7b7b7 !important;;
+}
+.dark .item_bg{
+  background-color: #000 !important;
+}
+.dark .item_bg h4{
+  color: #eee !important;
+}
+.dark .item_bg p{
+  color: #b7b7b7 !important;
+}
+
+/* Dark theme .solutions  */
+.dark .solutions .header h3{
+  color: #eee;
+}
+.dark .solutions .header p{
+  color: #b7b7b7;
+}
+.dark .solutions .info span {
+  background-color: #000  }
+.dark .modal-body{
+  background-color: #000;
+}
+.dark .solutions .modal-header {
+  color: #eee ;
+  background-color:#131617;
+}
+.dark .solutions .modal-body{
+  background-color:#131617 ;
+}
+.dark .solutions .close{
+  color: #ece4e4;
+  background-color: #131617;
+}
+.dark .solutions .form-group input{
+  border: 1px solid rgb(64, 61, 56);
+  background-color: #191C1D;
+}
+.dark .solutions .form-group input:focus{
+  background-color: #000;
+  color: #000;
+ 
+}
+
+/* Dark theme team  */
+.dark .team_members {
+  background-color: #191C1D;
+}
+.dark .team_members .title h3{
+  color: #eee;
+}
+.dark .team_members .title p{
+  color: #b7b7b7 ;
+}
+.dark .team_members .info{
+  background-color: #000;
+  border: 1px solid #323232;
+}
+.dark .team_members .info h3 {
+  color: #fff;
+}
+.dark .team_members .info p{
+  color: #b7b7b7;
+}
+
+/* dark theme .community */
+.dark .community h3{
+  color: #eee;
+}
+.dark .community p{
+  color:#b7b7b7 ;
+}
 /* Dark Theme--banner*/
 .dark .banner_bg {
   background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
@@ -777,7 +863,7 @@ header .navbar.active {
 
 .team_members .bg {
   width: 100%;
-  height: 250px;
+  height: 230px;
   display: inline-block;
   overflow: hidden;
   background: #f3f6f9;
@@ -799,7 +885,7 @@ header .navbar.active {
 }
 
 .team_members .team-info h3 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   transition: all 0.3s;
@@ -845,6 +931,7 @@ header .navbar.active {
 
 .team_members .team-info {
   transition: all 0.3s;
+
 }
 
 .team-info:hover {

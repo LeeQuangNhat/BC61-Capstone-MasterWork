@@ -767,3 +767,17 @@ footer a:hover {
     right: 10px;
   }
 }
+
+.dark .oops h2{
+  color: #fff;
+}
+.dark .oops p{
+  color: #b7b7b7;
+}
+.dark .oops a{
+  color: #fff;
+  transition: all 0.3s;
+}
+.dark .oops a:hover{
+  color: #dc4f72;
+}

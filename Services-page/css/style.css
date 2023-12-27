@@ -222,6 +222,11 @@ a {
 .dark .products .document p {
   color: #b7b7b7 !important;
 }
+/* Dark thêm-breadcrumd  */
+.dark .breadcrumb_home{
+  background-color: #191C1D !important;
+  color: #fff;
+}
 
 /* Dark Theme--general*/
 .dark .general {
