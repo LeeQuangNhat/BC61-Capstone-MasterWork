@@ -6,6 +6,7 @@
   line-height: 1.5;
 }
 
+
 ul {
   list-style: none;
 }
@@ -175,7 +176,10 @@ a {
 .dark .business_number_item p {
   color: #b7b7b7;
 }
-
+/* Dark theme feat  */
+.dark .features .title h2{
+  color: #fff !important;
+}
 /* Dark Theme--services*/
 .dark .services h2 {
   color: #eee;
@@ -201,12 +205,26 @@ a {
 .dark .content_right p {
   color: #b7b7b7;
 }
-
+/* dark theme features  */
+.dark .features_services .title h2{
+  color: #fff;
+}
+.dark .features_services .content h3{
+  color: #fff;
+}
+.dark .features_services ul li span{
+color: #fff;
+}
+.dark .features_services p{
+  color: #b7b7b7 !important;
+}
 /* Dark Theme--products*/
 .dark .products {
   background: #191c1d !important;
 }
-
+.dark .products p{
+  color: #b7b7b7 !important;
+}
 .dark .products .number span {
   background: #131617;
 }
